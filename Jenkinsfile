@@ -6,6 +6,8 @@ pipeline {
             steps {
                 echo 'Building'
                 sh 'python --version'
+                sh 'pwd'
+                sh 'python simple_calculator.py'
             }
         }
         stage('Test') {
